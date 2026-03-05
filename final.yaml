@@ -1,0 +1,18 @@
+path: D:/yolo11_test/final_project  # 数据集根目录
+train: D:/yolo11_test/train_v2.txt  # 训练集图片路径（相对于path）
+val: images    # 验证集图片路径（先用同一个，后期图多了再分）
+
+# 1. 类别映射：必须与你 txt 第一列的数字对应
+names:
+  0: focused
+  1: chatting
+  2: drinking
+  3: writing
+  4: phone
+  5: null
+
+# 2. 关键点设置：7个点，每个点有 x,y,visibility 三个值
+kpt_shape: [7, 3]
+
+# 3. 骨架连接（用于可视化，不影响精度但方便查看）
+skeleton: [[1, 2], [0, 1], [0, 2], [3, 1], [4, 2], [5, 0], [6, 0]]
